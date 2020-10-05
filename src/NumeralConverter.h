@@ -12,6 +12,6 @@ std::string convert(inputUnit converterType, std::string value) {
     } else if (converterType == dec) {
         return converter->ConvertToDecimal(value);
     } else if (converterType == hex) {
-        return converter->ConvertToBinary(value);
+        return converter->ConvertToHexadecimal(value);
     }  // end if
 }
