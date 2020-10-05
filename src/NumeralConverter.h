@@ -4,14 +4,14 @@
 #include "NumberBaseConverterFactory.hpp"
 
 using namespace NumberBaseConverter;
-std::string convert(inputUnit converterType, std::string value) {
+std::string convert(inputUnit input, inputUnit output, std::string value) {
     NumberBaseConverterFactory cF;
-    ConverterBase *converter = cF.GetConverter(converterType);
-    if (converterType == bin) {
+    ConverterBase *converter = cF.GetConverter(input);
+    if (output == bin) {
         return converter->ConvertToBinary(value);
-    } else if (converterType == dec) {
+    } else if (output == dec) {
         return converter->ConvertToDecimal(value);
-    } else if (converterType == hex) {
+    } else if (output == hex) {
         return converter->ConvertToHexadecimal(value);
     }  // end if
 }

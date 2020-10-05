@@ -1,6 +1,6 @@
 {
     "name": "Numeral Converter",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "keywords": "Arduino, ESP32, Hex, Dec, Bin, Binary, Hexadecimal, Decimal, Converter",
     "description": "Converter for Hexadecimals, Decimals and Binaries",
     "homepage": "https://github.com/Hasenburg/Numeral-Converter-Hex-Dec-Bin-",
