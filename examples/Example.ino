@@ -16,10 +16,7 @@ Return Type will be std::string
 void setup() {
   Serial.begin(115200);
 
-
-  
   Serial.println(convert(dec, "0F2E"));
-
 
   Serial.println(convert(hex, "16380"));
 
